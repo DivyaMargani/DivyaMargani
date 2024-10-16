@@ -27,7 +27,7 @@ public class AdminLoginUM {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 		driver.get("https://ambulance.genamplifysol.com/");
-		System.out.println("Hello");
+		System.out.println("Hell");
 	}
 
 	@Test()
