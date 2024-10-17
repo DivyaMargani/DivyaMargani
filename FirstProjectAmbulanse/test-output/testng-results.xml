@@ -1,59 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-16T10:39:11 IST" name="Default suite" finished-at="2024-10-16T10:40:09 IST" duration-ms="58497">
+  <suite started-at="2024-10-17T09:51:28 IST" name="Default suite" finished-at="2024-10-17T09:52:11 IST" duration-ms="43053">
     <groups>
     </groups>
-    <test started-at="2024-10-16T10:39:11 IST" name="Default test" finished-at="2024-10-16T10:40:09 IST" duration-ms="58497">
+    <test started-at="2024-10-17T09:51:28 IST" name="Default test" finished-at="2024-10-17T09:52:11 IST" duration-ms="43053">
       <class name="superadmin.AdminLoginUM">
-        <test-method is-config="true" signature="launch()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:11 IST" name="launch" finished-at="2024-10-16T10:39:18 IST" duration-ms="7212" status="PASS">
+        <test-method is-config="true" signature="launch()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:51:28 IST" name="launch" finished-at="2024-10-17T09:51:35 IST" duration-ms="7755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="login()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:18 IST" name="login" finished-at="2024-10-16T10:39:23 IST" duration-ms="5277" status="PASS">
+        <test-method signature="login()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:51:35 IST" name="login" finished-at="2024-10-17T09:51:40 IST" duration-ms="4802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="actions()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:23 IST" name="actions" finished-at="2024-10-16T10:39:26 IST" depends-on-methods="superadmin.AdminLoginUM.login" duration-ms="2375" status="PASS">
+        <test-method signature="actions()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:51:40 IST" name="actions" finished-at="2024-10-17T09:51:50 IST" depends-on-methods="superadmin.AdminLoginUM.login" duration-ms="10018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- actions -->
-        <test-method signature="getUMtabledata()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:26 IST" name="getUMtabledata" finished-at="2024-10-16T10:39:28 IST" depends-on-methods="superadmin.AdminLoginUM.actions" duration-ms="2451" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUMtabledata -->
-        <test-method signature="editdata()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:28 IST" name="editdata" finished-at="2024-10-16T10:39:42 IST" depends-on-methods="superadmin.AdminLoginUM.getUMtabledata" duration-ms="14003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editdata -->
-        <test-method signature="blocknddelete()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:42 IST" name="blocknddelete" finished-at="2024-10-16T10:39:51 IST" depends-on-methods="superadmin.AdminLoginUM.editdata" duration-ms="9218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blocknddelete -->
-        <test-method signature="details()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:39:51 IST" name="details" finished-at="2024-10-16T10:40:04 IST" depends-on-methods="superadmin.AdminLoginUM.blocknddelete" duration-ms="12302" status="FAIL">
+        <test-method signature="getUMtabledata()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:51:50 IST" name="getUMtabledata" finished-at="2024-10-17T09:52:00 IST" depends-on-methods="superadmin.AdminLoginUM.actions" duration-ms="10129" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='sidebar-image']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='User Management']"}
   (Session info: chrome=129.0.6668.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de01800f549636b79585cab4b86a1625, findElement {using=xpath, value=//img[@class='sidebar-image']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49992/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de01800f549636b79585cab4b86a1625]]>
+Command: [f2a5c9d3791470101110f835bd621aa7, findElement {using=xpath, value=//span[text()='User Management']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59134/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2a5c9d3791470101110f835bd621aa7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='sidebar-image']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='User Management']"}
   (Session info: chrome=129.0.6668.101)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [de01800f549636b79585cab4b86a1625, findElement {using=xpath, value=//img[@class='sidebar-image']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49992/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: de01800f549636b79585cab4b86a1625
+Command: [f2a5c9d3791470101110f835bd621aa7, findElement {using=xpath, value=//span[text()='User Management']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59134}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59134/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2a5c9d3791470101110f835bd621aa7
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -68,7 +56,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at superadmin.AdminLoginUM.details(AdminLoginUM.java:138)
+at superadmin.AdminLoginUM.getUMtabledata(AdminLoginUM.java:59)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -100,8 +88,110 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- getUMtabledata -->
+        <test-method signature="editdata()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:52:00 IST" name="editdata" finished-at="2024-10-17T09:52:00 IST" depends-on-methods="superadmin.AdminLoginUM.getUMtabledata" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method superadmin.AdminLoginUM.editdata() on instance superadmin.AdminLoginUM@5609159b depends on not successfully finished methods 
+[superadmin.AdminLoginUM.getUMtabledata() on instance superadmin.AdminLoginUM@5609159b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method superadmin.AdminLoginUM.editdata() on instance superadmin.AdminLoginUM@5609159b depends on not successfully finished methods 
+[superadmin.AdminLoginUM.getUMtabledata() on instance superadmin.AdminLoginUM@5609159b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editdata -->
+        <test-method signature="blocknddelete()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:52:01 IST" name="blocknddelete" finished-at="2024-10-17T09:52:01 IST" depends-on-methods="superadmin.AdminLoginUM.editdata" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method superadmin.AdminLoginUM.blocknddelete() on instance superadmin.AdminLoginUM@5609159b depends on not successfully finished methods 
+[superadmin.AdminLoginUM.editdata() on instance superadmin.AdminLoginUM@5609159b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method superadmin.AdminLoginUM.blocknddelete() on instance superadmin.AdminLoginUM@5609159b depends on not successfully finished methods 
+[superadmin.AdminLoginUM.editdata() on instance superadmin.AdminLoginUM@5609159b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blocknddelete -->
+        <test-method signature="details()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:52:01 IST" name="details" finished-at="2024-10-17T09:52:01 IST" depends-on-methods="superadmin.AdminLoginUM.blocknddelete" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method superadmin.AdminLoginUM.details() on instance superadmin.AdminLoginUM@5609159b depends on not successfully finished methods 
+[superadmin.AdminLoginUM.blocknddelete() on instance superadmin.AdminLoginUM@5609159b]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method superadmin.AdminLoginUM.details() on instance superadmin.AdminLoginUM@5609159b depends on not successfully finished methods 
+[superadmin.AdminLoginUM.blocknddelete() on instance superadmin.AdminLoginUM@5609159b]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- details -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-16T10:40:04 IST" name="logout" finished-at="2024-10-16T10:40:09 IST" duration-ms="5484" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:superadmin.AdminLoginUM@5609159b]" started-at="2024-10-17T09:52:01 IST" name="logout" finished-at="2024-10-17T09:52:11 IST" duration-ms="10063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
