@@ -1,23 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-04T16:45:49 IST" name="Suite" finished-at="2024-11-04T16:45:49 IST" duration-ms="84">
+  <suite started-at="2024-11-04T17:41:32 IST" name="Suite" finished-at="2024-11-04T17:41:57 IST" duration-ms="25447">
     <groups>
-      <group name="regression">
-        <method signature="GroupsEx.test7()[pri:0, instance:datadriven.GroupsEx@79d8407f]" name="test7" class="datadriven.GroupsEx"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="GroupsEx.test7()[pri:0, instance:datadriven.GroupsEx@79d8407f]" name="test7" class="datadriven.GroupsEx"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-11-04T16:45:49 IST" name="Test" finished-at="2024-11-04T16:45:49 IST" duration-ms="84">
-      <class name="datadriven.GroupsEx">
-        <test-method signature="test7()[pri:0, instance:datadriven.GroupsEx@79d8407f]" started-at="2024-11-04T16:45:49 IST" name="test7" finished-at="2024-11-04T16:45:49 IST" duration-ms="14" status="PASS">
+    <test started-at="2024-11-04T17:41:32 IST" name="Test" finished-at="2024-11-04T17:41:44 IST" duration-ms="12771">
+      <class name="datadriven.CrossBrowserTesting">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:datadriven.CrossBrowserTesting@6a2b953e]" started-at="2024-11-04T17:41:32 IST" name="launch" finished-at="2024-11-04T17:41:35 IST" duration-ms="2917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test7 -->
-      </class> <!-- datadriven.GroupsEx -->
+        </test-method> <!-- launch -->
+        <test-method signature="login()[pri:0, instance:datadriven.CrossBrowserTesting@6a2b953e]" started-at="2024-11-04T17:41:35 IST" name="login" finished-at="2024-11-04T17:41:41 IST" duration-ms="5929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:datadriven.CrossBrowserTesting@6a2b953e]" started-at="2024-11-04T17:41:41 IST" name="teardown" finished-at="2024-11-04T17:41:44 IST" duration-ms="3858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- datadriven.CrossBrowserTesting -->
     </test> <!-- Test -->
+    <test started-at="2024-11-04T17:41:32 IST" name="Test1" finished-at="2024-11-04T17:41:57 IST" duration-ms="25415">
+      <class name="datadriven.CrossBrowserTesting">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:datadriven.CrossBrowserTesting@8317c52]" started-at="2024-11-04T17:41:32 IST" name="launch" finished-at="2024-11-04T17:41:48 IST" duration-ms="16341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="login()[pri:0, instance:datadriven.CrossBrowserTesting@8317c52]" started-at="2024-11-04T17:41:48 IST" name="login" finished-at="2024-11-04T17:41:52 IST" duration-ms="3547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:datadriven.CrossBrowserTesting@8317c52]" started-at="2024-11-04T17:41:52 IST" name="teardown" finished-at="2024-11-04T17:41:57 IST" duration-ms="5500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- datadriven.CrossBrowserTesting -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-11-04T17:41:32 IST" name="Test2" finished-at="2024-11-04T17:41:57 IST" duration-ms="25447">
+      <class name="datadriven.CrossBrowserTesting">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:datadriven.CrossBrowserTesting@68e965f5]" started-at="2024-11-04T17:41:32 IST" name="launch" finished-at="2024-11-04T17:41:44 IST" duration-ms="12106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="login()[pri:0, instance:datadriven.CrossBrowserTesting@68e965f5]" started-at="2024-11-04T17:41:44 IST" name="login" finished-at="2024-11-04T17:41:53 IST" duration-ms="9681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:datadriven.CrossBrowserTesting@68e965f5]" started-at="2024-11-04T17:41:53 IST" name="teardown" finished-at="2024-11-04T17:41:57 IST" duration-ms="3638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- datadriven.CrossBrowserTesting -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
