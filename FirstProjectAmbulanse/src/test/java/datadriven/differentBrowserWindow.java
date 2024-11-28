@@ -29,7 +29,7 @@ public class differentBrowserWindow {
 			}
 		}
 		WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("Selenium WebDriver");
+		searchBox.sendKeys("Selenium WebDriver"); 
         searchBox.submit();
         driver.switchTo().window(firsttab);
         WebElement googleSearchBox = driver.findElement(By.name("q"));

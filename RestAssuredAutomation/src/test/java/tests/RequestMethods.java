@@ -29,7 +29,7 @@ public class RequestMethods {
 		JSONObject request = new JSONObject();
 		request.put("name", "Divyasri");
 		request.put("job", "QA");
-		id = given().body(request.toJSONString()).when().post("api/users").jsonPath().getInt("id");
+		id= given().body(request.toJSONString()).when().post("api/users").jsonPath().getInt("id");
 		// then().statusCode(201).log().all();
 
 	}
